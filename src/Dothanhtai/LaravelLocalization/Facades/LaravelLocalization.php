@@ -1,6 +1,6 @@
 <?php
 
-namespace Nguyen930411\LaravelLocalization\Facades;
+namespace Dothanhtai\LaravelLocalization\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nguyen930411\LaravelLocalization\Middleware;
+namespace Dothanhtai\LaravelLocalization\Middleware;
 
 
 class LaravelLocalizationMiddlewareBase

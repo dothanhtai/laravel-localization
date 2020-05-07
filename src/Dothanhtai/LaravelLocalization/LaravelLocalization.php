@@ -1,6 +1,6 @@
 <?php
 
-namespace Nguyen930411\LaravelLocalization;
+namespace Dothanhtai\LaravelLocalization;
 
 use Illuminate\Config\Repository;
 use Illuminate\Foundation\Application;
@@ -9,8 +9,8 @@ use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Translation\Translator;
 use Illuminate\View\Factory;
-use Nguyen930411\LaravelLocalization\Exceptions\SupportedLocalesNotDefined;
-use Nguyen930411\LaravelLocalization\Exceptions\UnsupportedLocaleException;
+use Dothanhtai\LaravelLocalization\Exceptions\SupportedLocalesNotDefined;
+use Dothanhtai\LaravelLocalization\Exceptions\UnsupportedLocaleException;
 
 class LaravelLocalization
 {

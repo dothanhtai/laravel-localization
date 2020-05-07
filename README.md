@@ -27,14 +27,14 @@ Laravel 5 is released!!
 
 ## Installation
 
-Install the package via composer: `composer require nguyen930411/laravel-localization`
+Install the package via composer: `composer require Dothanhtai/laravel-localization`
 
 Register the ServiceProvider in `config/app.php`
 
 ```php
         'providers' => [
 		// [...]
-                Nguyen930411\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+                Dothanhtai\LaravelLocalization\LaravelLocalizationServiceProvider::class,
         ],
 ```
 
@@ -43,7 +43,7 @@ You may also register the `LaravelLocalization` Facade:
 ```php
         'aliases' => [
 		// [...]
-                'LaravelLocalization' => Nguyen930411\LaravelLocalization\Facades\LaravelLocalization::class,
+                'LaravelLocalization' => Dothanhtai\LaravelLocalization\Facades\LaravelLocalization::class,
         ],
 ```
 
@@ -106,10 +106,10 @@ class Kernel extends HttpKernel {
 	 */
 	protected $routeMiddleware = [
 		/**** OTHER MIDDLEWARE ****/
-		'localize' => \Nguyen930411\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
-		'localizationRedirect' => \Nguyen930411\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
-		'localeSessionRedirect' => \Nguyen930411\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
-                'localeViewPath' => \Nguyen930411\LaravelLocalization\Middleware\LaravelLocalizationViewPath::class
+		'localize' => \Dothanhtai\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
+		'localizationRedirect' => \Dothanhtai\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
+		'localeSessionRedirect' => \Dothanhtai\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
+                'localeViewPath' => \Dothanhtai\LaravelLocalization\Middleware\LaravelLocalizationViewPath::class
 		// REDIRECTION MIDDLEWARE
 	];
 }
@@ -393,7 +393,7 @@ class Kernel extends HttpKernel {
 	 */
 	protected $routeMiddleware = [
 		/**** OTHER MIDDLEWARE ****/
-		'localize' => 'Nguyen930411\LaravelLocalization\Middleware\LaravelLocalizationRoutes',
+		'localize' => 'Dothanhtai\LaravelLocalization\Middleware\LaravelLocalizationRoutes',
 		// TRANSLATE ROUTES MIDDLEWARE
 	];
 }
@@ -469,14 +469,14 @@ Be sure to pass the locale and the attributes as parameters to the closure. You 
 In order to edit the default configuration for this package you may execute:
 
 ```
-php artisan vendor:publish --provider="Nguyen930411\LaravelLocalization\LaravelLocalizationServiceProvider"
+php artisan vendor:publish --provider="Dothanhtai\LaravelLocalization\LaravelLocalizationServiceProvider"
 ```
 
 After that, `config/laravellocalization.php` will be created. Inside this file you will find all the fields that can be edited in this package.
 
 ### Service Providers
 
-Otherwise, you can use `ConfigServiceProviders` (check <a href="https://raw.githubusercontent.com/nguyen930411/laravel-localization/master/src/config/config.php">this file</a> for more info).
+Otherwise, you can use `ConfigServiceProviders` (check <a href="https://raw.githubusercontent.com/Dothanhtai/laravel-localization/master/src/config/config.php">this file</a> for more info).
 
 For example, editing the default config service provider that Laravel loads when it's installed. This file is placed in `app/providers/ConfigServicePovider.php` and would look like this:
 

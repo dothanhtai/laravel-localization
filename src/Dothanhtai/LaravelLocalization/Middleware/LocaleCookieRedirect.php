@@ -1,4 +1,4 @@
-<?php namespace Nguyen930411\LaravelLocalization\Middleware;
+<?php namespace Dothanhtai\LaravelLocalization\Middleware;
 
 use Illuminate\Http\RedirectResponse;
 use Closure;

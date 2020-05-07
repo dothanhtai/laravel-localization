@@ -1,6 +1,6 @@
 <?php
 
-namespace Nguyen930411\LaravelLocalization\Exceptions;
+namespace Dothanhtai\LaravelLocalization\Exceptions;
 
 use Exception;
 

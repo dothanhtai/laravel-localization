@@ -1,6 +1,6 @@
 <?php
 
-namespace Nguyen930411\LaravelLocalization;
+namespace Dothanhtai\LaravelLocalization;
 
 use Illuminate\Http\Request;
 use Locale;
